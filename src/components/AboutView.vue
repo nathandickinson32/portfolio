@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>The current Player is: Player <span>{{ currentPlayer }}</span></h1>
     <h1>{{ result }}</h1>
     <div class="grid">
@@ -70,10 +70,14 @@ export default {
 </script>
 
 <style scoped>
+/* body{
+    background-color: black;
+    
+} */
 .grid {
     border: 1px solid;
-    height: 480px;
-    width: 560px;
+    height: 560px; /* Adjusted height for 7x7 grid */
+    width: 560px; /* Adjusted width for 7x7 grid */
     display: flex;
     flex-wrap: wrap;
 }
@@ -81,22 +85,21 @@ export default {
 .grid div {
     height: 80px;
     width: 80px;
-   
 }
 
 .player-one {
     background-color: red;
     border-radius: 40px;
-
 }
 
 .player-two {
     background-color: blue;
     border-radius: 40px;
-
 }
-body{
-    background-color: black;
-    color: white;
+.container{
+  background-color: black;
+  color:white;
+  border-color: white;
+  background-size: 100vh;
 }
 </style>
